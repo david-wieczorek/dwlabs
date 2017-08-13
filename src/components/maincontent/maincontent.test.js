@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import Maincontent from './maincontent';
 
 const powerdby = <p>main page sections</p>;
