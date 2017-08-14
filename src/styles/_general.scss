@@ -6,7 +6,25 @@ body {
    text-align: center;
 }
 
-#mapid {
+.wrapper {
+   padding: 20px;
+   text-align: left;
+}
+
+.data-bloc {
+   margin: 20px 0 0 0;
+   section {
+      padding: 10px;
+      background-color: #eee;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+   }
+   section:last-child {
+      margin-bottom: 0;
+   }
+}
+
+#mymapbox {
    height: 400px;
    width: 100%;
 }

@@ -6,7 +6,7 @@ class Mapbox extends Component {
       this.map();
    }
    map() {
-      const mymap = L.map('mapid').setView([51.505, -0.09], 13);
+      const mymap = L.map('mymapbox').setView([51.505, -0.09], 14);
       L.circle([51.508, -0.11], {
          color: 'red',
          fillColor: '#f03',
@@ -20,7 +20,7 @@ class Mapbox extends Component {
    }
 
    render() {
-      return <div id="mapid" />;
+      return <div id="mymapbox" />;
    }
 }
 
