@@ -51,6 +51,10 @@ class MyComp extends Component {
                      {moment(hit.created_at).format('DD/MM/YYYY')}
                   </h4>
                   <a href={hit.url}>
+                     <i
+                        className="fa fa-rss"
+                        aria-hidden="true"
+                     />{' '}
                      {hit.title}
                   </a>
                </section>
