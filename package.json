@@ -1,42 +1,43 @@
 {
-   "name": "dwlab",
-   "version": "1.0.0",
-   "private": true,
-   "dependencies": {
-      "enzyme": "^2.9.1",
-      "font-awesome": "^4.7.0",
-      "husky": "^0.14.3",
-      "jest-enzyme": "^3.7.0",
-      "leaflet": "^1.2.0",
-      "lint-staged": "^4.0.3",
-      "lodash": "^4.17.4",
-      "moment": "^2.18.1",
-      "node-sass-chokidar": "0.0.3",
-      "normalize.css": "^7.0.0",
-      "npm-run-all": "^4.0.2",
-      "prettier": "^1.5.3",
-      "react": "^15.6.1",
-      "react-dom": "^15.6.1",
-      "react-router-dom": "^4.1.2",
-      "react-scripts": "1.0.11",
-      "react-test-renderer": "^15.6.1",
-      "source-map-explorer": "^1.4.0"
-   },
-   "lint-staged": {
-      "src/**/*.{js,jsx,json,css}": [
-         "prettier --single-quote --write",
-         "git add"
-      ]
-   },
-   "scripts": {
-      "analyze": "source-map-explorer build/static/js/main.*",
-      "precommit": "lint-staged",
-      "start-js": "react-scripts start",
-      "start": "npm-run-all -p watch-css start-js",
-      "build": "npm run build-css && react-scripts build",
-      "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject",
-      "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-      "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
-   }
+  "name": "dwlab",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "animejs": "^2.0.2",
+    "enzyme": "^2.9.1",
+    "font-awesome": "^4.7.0",
+    "husky": "^0.14.3",
+    "jest-enzyme": "^3.7.0",
+    "leaflet": "^1.2.0",
+    "lint-staged": "^4.0.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "node-sass-chokidar": "0.0.3",
+    "normalize.css": "^7.0.0",
+    "npm-run-all": "^4.0.2",
+    "prettier": "^1.5.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.11",
+    "react-test-renderer": "^15.6.1",
+    "source-map-explorer": "^1.4.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "precommit": "lint-staged",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+  }
 }
