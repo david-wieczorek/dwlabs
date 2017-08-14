@@ -2,10 +2,10 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Maincontent from './maincontent';
 
-const powerdby = <p>main page sections</p>;
+const powerdby = <h2>main page sections</h2>;
 
 describe('maincontent page', () => {
-   it('renders welcome message', () => {
-      expect(shallow(<Maincontent />)).toContainReact(powerdby);
-   });
+  it('renders welcome message', () => {
+    expect(shallow(<Maincontent />)).toContainReact(powerdby);
+  });
 });

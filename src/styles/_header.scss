@@ -1,5 +1,8 @@
 .main-header {
    background-color: $header;
-   padding: 20px;
+   padding: 40px;
    color: white;
+   h2 {
+      margin: 0;
+   }
 }

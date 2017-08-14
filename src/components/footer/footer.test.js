@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Footer from './footer';
 
 const wrapper = shallow(<Footer />);
-const powerdby = <h6>Powered by react</h6>;
+const powerdby = <span>Powered by react</span>;
 
 describe('Footer', () => {
   it('renders powerdby message', () => {
