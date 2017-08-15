@@ -4,5 +4,9 @@ node_js:
 script:
   - npm test
   - yarn build
+env:
+  global:
+    - "FTP_USER=$user"
+    - "FTP_PASSWORD=$password"
 after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $user:$password ftp://ftp.cluster023.hosting.ovh.net/www"
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://ftp.cluster023.hosting.ovh.net/www"
