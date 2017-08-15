@@ -1,24 +1,31 @@
 nav {
    background-color: $mainmenu;
+   border-bottom: 1px solid #e7ebf3;
    .nav {
       margin: 0;
       padding: 0 20px;
       text-align: left;
+      max-width: 1200px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       li {
          display: inline-block;
          a {
             display: block;
-            color: $footer;
+            color: $violet;
+            font-size: 1.4em;
             height: 30px;
             line-height: 30px;
             text-align: center;
             padding: 10px 20px;
          }
          a:hover {
-            background-color: #eee;
+            background-color: #EEF1F6;
          }
          a.active {
-            background-color: #fff;
+            background-color: #e7ebf3;
+            color: $violet;
          }
       }
    }

@@ -1,6 +1,10 @@
 .main-footer {
-   background-color: $footer;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: $mainmenu;
+   border-top: 1px solid #e7ebf3;
    padding: 20px;
    font-size: 0.8em;
-   color: white;
 }

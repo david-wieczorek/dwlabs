@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Header from './header';
 
 const wrapper = shallow(<Header />);
-const welcome = <h1>Welcome to David Wieczorek Lab</h1>;
+const welcome = <h3>Welcome to David Wieczorek Lab</h3>;
 
 describe('Header', () => {
   it('renders welcome message', () => {
