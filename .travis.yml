@@ -9,4 +9,4 @@ env:
     - "FTP_USER=user"
     - "FTP_PASSWORD=password"
 after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://ftp.cluster023.hosting.ovh.net"
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp.cluster023.hosting.ovh.net/www"
