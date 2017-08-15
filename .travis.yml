@@ -11,6 +11,10 @@ addons:
     packages:
     - lftp
 os: linux
+deploy:
+  provider: heroku
+  api_key:
+    secure: "095e5640-c329-427c-b5ef-c7baa7e04f61"
 env:
   global:
   - secure: fiO/uDstcXJiHMVH5HGFzZKBQcex+c16Ng2QUDiiey3UHK3vrft2bSREkTWyBClUWTGamwCnPzNHTvbfd08zLWoDw6+2lTo/iCNR71OjKREnZoUYSoB+ZM5N/VQdSrAM7VbBA3JBS2+DXnzXYo4QSNX3twx88vukyRt7WgmVOl6KFmmhqbrAtzdfdyNd3EetEWTwy9doAxo5tc5lM+3/KPOEKp6d0oiVbOP1MW01B8qAnf4cl5mCnCtDDFOpF0VZ7hOabvQ/4T1Btya/L8hbMxUOrVToR2b24r/LUa3/8uNl+N5aB/Ky3ajC7lfmV5w04rct1Ac8bl9cu1ujRc0KBz/bYNdMuerdHoKYbW70bJ91p6HgO88hwP2RFTH0y3IqQoV+eZMU49qE3ycwBYcnL1aO7gnoE5Ql1CHxkCOYDhxu0yEGssrco6yGxndPiKpkFrpzwlAhI4xmfWx8piVKFEJ2nS2HJlUjI4DQ15hDI2DJiLRMugLXUk5reqZGj5KiL2g7O/YAG21mOJodYjn5mIxXoQh6wYMxB3nJtcJ1ZAmSNoJok7GEHGVZsPwNrv14TVIIx+VaJJ2JBQngoWggfDZXkp4U0DbepaSeQAkWmve0QyK+eHS519855iaz6+mOixHPEyJC7YmPcOFHg+KrC0iHeB7CMb6gas7uOahzmJA=
