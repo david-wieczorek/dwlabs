@@ -4,8 +4,8 @@ abort() {
     echo $message
     exit -1
 }
-[ -z $FTP_PASS ] && abort "FTP_PASS is undefined"
+[ -z $FTP_PASSWORD ] && abort "FTP_PASSWORD is undefined"
 [ -z $FTP_USER ] && abort "FTP_USER is undefined"
 [ -z $FTP_SITE ] && abort "FTP_SITE is undefined"
-lftp -u $FTP_USER,$FTP_PASS $FTP_SITE \
+lftp -u $FTP_USER,$FTP_PASSWORD $FTP_SITE \
  -e 'mirror -c -e -R build ~/www ; exit'
