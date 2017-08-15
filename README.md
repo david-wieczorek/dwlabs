@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/david-wieczorek/dwlabs.svg?branch=master)](https://travis-ci.org/david-wieczorek/dwlabs)
+
 Dw Lab was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Updating to New Releases
