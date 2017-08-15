@@ -22,6 +22,11 @@ class Mainmenu extends Component {
                 Fetch Data Test
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/forms" activeClassName="active">
+                Forms
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>

@@ -5,6 +5,7 @@ import Main from './views';
 import Home from './views/home';
 import Mapview from './views/map';
 import Fetchview from './views/fetch';
+import Formsview from './views/forms';
 import registerServiceWorker from './registerServiceWorker';
 import 'normalize.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route exact path="/" component={Home} />
       <Route path="/map" component={Mapview} />
       <Route path="/fetch" component={Fetchview} />
+      <Route path="/forms" component={Formsview} />
     </Main>
   </Router>,
   document.getElementById('root')
