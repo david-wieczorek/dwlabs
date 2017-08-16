@@ -11,17 +11,19 @@ class Codeview extends Component {
           <i className="fa fa-code" aria-hidden="true" /> Code test
         </h1>
         <div className="content">
-          <h2>Fetch data Component</h2>
-          <Fetchdata />
-        </div>
-        <div className="content">
-          <h2>Map Component</h2>
-          <p>Test Leaflet with react, yeahhh !</p>
-          <Mapbox />
-        </div>
-        <div className="content">
-          <h2>Charts Js Component</h2>
-          <Linechart />
+          <div className="bloc bloc-lightcolor">
+            <h2>Fetch data Component</h2>
+            <Fetchdata />
+          </div>
+          <div className="bloc bloc-darkcolor">
+            <h2>Map Component</h2>
+            <p>Test Leaflet with react, yeahhh !</p>
+            <Mapbox />
+          </div>
+          <div className="bloc bloc-lightcolor">
+            <h2>Charts Js Component</h2>
+            <Linechart />
+          </div>
         </div>
       </div>
     );

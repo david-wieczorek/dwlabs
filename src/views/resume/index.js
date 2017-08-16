@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Resumeinfos from '../../components/resumeinfos/resumeinfos';
-import Linechart from '../../components/chartline/chartline';
 
 class Resume extends Component {
   render() {
@@ -14,14 +13,14 @@ class Resume extends Component {
             <Resumeinfos />
           </div>
           <div className="left resume-content">
-            <div className="bloc bloc-nobckcolor">
+            <div className="bloc bloc-darkcolor intro">
               <p>
                 Lead Front End Developer, autant passioné par la technique
                 (code, technologie, architecture, déploiement) que le design
                 (prototypage et design d’interface, UI-UX, theming).
               </p>
             </div>
-            <div className="bloc">
+            <div className="bloc bloc-lightcolor">
               <h2>Experiences</h2>
               <div className="xperience">
                 <span className="xperience-date-from">02/2016</span>
@@ -172,11 +171,6 @@ class Resume extends Component {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="content">
-          <div className="bloc">
-            <Linechart />
           </div>
         </div>
       </div>
