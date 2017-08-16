@@ -6,6 +6,7 @@ import Home from './views/home';
 import Mapview from './views/map';
 import Fetchview from './views/fetch';
 import Formsview from './views/forms';
+import Chartsview from './views/charts';
 import registerServiceWorker from './registerServiceWorker';
 import 'normalize.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Route path="/map" component={Mapview} />
       <Route path="/fetch" component={Fetchview} />
       <Route path="/forms" component={Formsview} />
+      <Route path="/charts" component={Chartsview} />
     </Main>
   </Router>,
   document.getElementById('root')

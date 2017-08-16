@@ -27,6 +27,11 @@ class Mainmenu extends Component {
                 Forms
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/charts" activeClassName="active">
+                Charts
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
