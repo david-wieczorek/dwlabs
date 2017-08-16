@@ -1,124 +1,147 @@
 * {
-   -webkit-font-smoothing: subpixel-antialiased !important;
-   box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  box-sizing: border-box;
 }
 
 html {
-   font-size: 62.5%;
-   font-size: calc(1em * 0.625); /* fix */
+  font-size: 62.5%;
+  font-size: calc(1em * 0.625); /* fix */
 }
 
 body {
-   font-family: 'Raleway', sans-serif;
-   color: $violet3;
-   background-color: $blue1;
+  font-family: 'Raleway', sans-serif;
+  color: $violet3;
+  background-color: $blue1;
 }
 
 .App {
-   text-align: center;
+  text-align: center;
 }
 
 .wrapper {
-   padding: 20px 20px 20px 20px;
-   margin-left: 70px;
-   text-align: left;
-   .wrapper-content {
-      width: 100%;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-   }
+  padding: 20px 20px 20px 20px;
+  margin-left: 70px;
+  text-align: left;
+  .wrapper-content {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .resume-infos {
-   width: 30%;
-   margin-right: 2%;
-   text-align: center;
-   h3 {
-      font-size: 3em;
-      font-weight: 400;
-      color: $red1;
-      margin-bottom: 2px;
-   }
-   h4 {
-      font-weight: 200;
-      color: #fff;
-   }
-   .link {
-      ul {
-         margin: 10px 0 0 0;
-         padding: 0;
-         li {
-            display: inline-block;
-            margin: 0 7px;
-            a {
-               display: block;
-               width: 20px;
-               height: 20px;
-               line-height: 20px;
-               color: #fff;
-               i {
-                  font-size: 1.5em;
-               }
-            }
-         }
+  width: 30%;
+  margin-right: 2%;
+  text-align: center;
+  img {
+    width: 170px;
+  }
+  h3 {
+    font-size: 3em;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  h4 {
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .link {
+    color: #fff;
+    h5 {
+      font-size: 1.8em;
+    }
+    ul {
+      margin: 10px 0 0 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin: 4px 7px;
+        font-size: 1.2em;
+        a {
+          display: block;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          color: #fff;
+          i {
+            font-size: 1.5em;
+            color: $violet3;
+          }
+        }
+        a:hover {
+          i {
+            color: $red1;
+          }
+        }
       }
-   }
-   .passion {
-      margin: 30px 0;
-      h4 {
-         color: $violet3;
-      }
-   }
+    }
+  }
+  .passion {
+    margin: 30px 0;
+    h4 {
+      color: $violet3;
+    }
+  }
 }
 .resume-content {
-   width: 68%;
-   .xperience {
-      position: relative;
-      padding: 10px;
-      margin-bottom: 20px;
-      border-radius: 2px;
-      background-color: $gray2;
-      //margin-left: 80px;
-      .xperience-date-from {
-         display: none;
-         position: absolute;
-         font-size: 1.3em;
-         left: -80px;
-         bottom: -30px;
+  width: 68%;
+  .intro {
+    p {
+      margin: 0;
+      font-style: italic;
+      color: #b5b5b5;
+    }
+  }
+  .xperience {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    background-color: $gray2;
+    //margin-left: 80px;
+    .xperience-date-from {
+      display: none;
+      position: absolute;
+      font-size: 1.3em;
+      left: -80px;
+      bottom: -30px;
+    }
+    .xperience-date-to {
+      display: none;
+      position: absolute;
+      font-size: 1.3em;
+      left: -80px;
+      top: 15px;
+    }
+    .xperience-content {
+      h3 {
+        font-size: 1.8em;
+        margin-bottom: 2px;
+        span {
+          color: $blue1;
+          font-size: 0.8em;
+        }
       }
-      .xperience-date-to {
-         display: none;
-         position: absolute;
-         font-size: 1.3em;
-         left: -80px;
-         top: 15px;
+    }
+    ul.xperience-tag {
+      margin: 10px 0 0 0;
+      padding: 0;
+      li {
+        text-transform: lowercase;
+        display: inline-block;
+        padding: 2px 5px;
+        margin: 4px 5px 0 0;
+        border-radius: 2px;
+        color: #fff;
+        background-color: $gray1;
       }
-      .xperience-content {
-         h3 {
-            font-size: 1.8em;
-            margin-bottom: 2px;
-            span {
-               color: $blue1;
-               font-size: 0.8em;
-            }
-         }
-      }
-      ul.xperience-tag {
-         margin: 10px 0 0 0;
-         padding: 0;
-         li {
-            text-transform: lowercase;
-            display: inline-block;
-            padding: 2px 5px;
-            margin: 4px 5px 0 0;
-            border-radius: 2px;
-            color: #fff;
-            background-color: $gray1;
-         }
-      }
-   }
-   /*.xperience:after {
+    }
+  }
+  /*.xperience:after {
       content: "";
       width: 2px;
       position: absolute;
@@ -127,37 +150,37 @@ body {
       height: 100%;
       background-color: $violet3;
    }*/
-   .xperience:last-child {
-      margin-bottom: 0;
-   }
+  .xperience:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .data-bloc {
-   margin: 20px 0 0 0;
-   section {
-      padding: 20px;
-      background-color: $gray2;
-      box-shadow: inset 0 0 0 1px rgba(89, 105, 128, .1),
-         inset 0 1px 3px 0 rgba(207, 215, 230, .6);
-      border-radius: 4px;
-      margin-bottom: 10px;
-      div {
-         width: 20px;
-         height: 20px;
-         border-radius: 50%;
-      }
-      div.blue {
-         background-color: blue;
-      }
-   }
-   section:last-child {
-      margin-bottom: 0;
-   }
+  margin: 20px 0 0 0;
+  section {
+    padding: 20px;
+    background-color: $gray2;
+    box-shadow: inset 0 0 0 1px rgba(89, 105, 128, .1),
+      inset 0 1px 3px 0 rgba(207, 215, 230, .6);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    div {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+    div.blue {
+      background-color: blue;
+    }
+  }
+  section:last-child {
+    margin-bottom: 0;
+  }
 }
 
 #mymapbox {
-   height: 400px;
-   width: 100%;
+  height: 400px;
+  width: 100%;
 }
 
 // UTILS
@@ -165,21 +188,21 @@ body {
 
 .clearfix:before,
 .clearfix:after {
-   content: "";
-   display: table;
+  content: "";
+  display: table;
 }
 .clearfix:after {
-   clear: both;
+  clear: both;
 }
 .clearfix {
-   zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
 .left {
-   display: inline-block;
-   float: left;
+  display: inline-block;
+  float: left;
 }
 .right {
-   display: inline-block;
-   float: right;
+  display: inline-block;
+  float: right;
 }

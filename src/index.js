@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import Main from './views';
 import Home from './views/home';
 import Resumeview from './views/resume';
@@ -12,13 +12,13 @@ import 'leaflet/dist/leaflet.css';
 import './index.css';
 
 ReactDOM.render(
-  <Router>
+  <HashRouter>
     <Main>
       <Route exact path="/" component={Home} />
       <Route path="/resume" component={Resumeview} />
       <Route path="/codes" component={Codeview} />
     </Main>
-  </Router>,
+  </HashRouter>,
   document.getElementById('root')
 );
 registerServiceWorker();

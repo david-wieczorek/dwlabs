@@ -28,10 +28,35 @@ class Welcome extends Component {
                 <i className="fa fa-github" />
               </a>
             </li>
+            <li>
+              <a
+                href="mailto:davidwieczorekpro@gmail.com"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-envelope" />
+              </a>
+            </li>
           </ul>
         </div>
-        <div className="bloc link passion">
-          <h4>Passions</h4>
+        <div className="bloc bloc-darkcolor2 link passion">
+          <h5>Skills</h5>
+          <ul>
+            <li>JS/ES6</li>
+            <li>Angular/React</li>
+            <li>Html5/Css3/Sass</li>
+            <li>Git</li>
+            <li>Gulp/Grunt/Webpack</li>
+            <li>Leaflet</li>
+            <li>Charjs</li>
+            <li>D3js</li>
+            <li>Nodejs</li>
+            <li>Photoshop/Sketch</li>
+            <li>UI/UX</li>
+            <li>Travis</li>
+          </ul>
+        </div>
+        <div className="bloc bloc-darkcolor2 link passion">
+          <h5>Hobbies</h5>
           <ul>
             <li>Code</li>
             <li>Techs</li>
