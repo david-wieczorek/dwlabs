@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import Header from '../components/header/header';
-import Mainmenu from '../components/mainmenu/mainmenu';
-import Footer from '../components/footer/footer';
+import Sidebar from '../components/sidebar/sidebar';
 
 class Home extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Mainmenu />
+        <Sidebar />
         <div className="wrapper">
-          {this.props.children}
+          <div className="wrapper-content">
+            {this.props.children}
+          </div>
         </div>
-        <Footer />
       </div>
     );
   }

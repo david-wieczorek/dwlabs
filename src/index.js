@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Main from './views';
 import Home from './views/home';
-import Mapview from './views/map';
-import Fetchview from './views/fetch';
-import Formsview from './views/forms';
-import Chartsview from './views/charts';
+import Resumeview from './views/resume';
+import Codeview from './views/code';
 import registerServiceWorker from './registerServiceWorker';
 import 'normalize.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -17,10 +15,8 @@ ReactDOM.render(
   <Router>
     <Main>
       <Route exact path="/" component={Home} />
-      <Route path="/map" component={Mapview} />
-      <Route path="/fetch" component={Fetchview} />
-      <Route path="/forms" component={Formsview} />
-      <Route path="/charts" component={Chartsview} />
+      <Route path="/resume" component={Resumeview} />
+      <Route path="/codes" component={Codeview} />
     </Main>
   </Router>,
   document.getElementById('root')

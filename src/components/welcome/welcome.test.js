@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Header from './header';
+import Welcome from './welcome';
 
-const wrapper = shallow(<Header />);
+const wrapper = shallow(<Welcome />);
 const welcome = <h3>David Wieczorek Lab</h3>;
 
-describe('Header', () => {
+describe('Welcome', () => {
   it('renders welcome message', () => {
     expect(wrapper).toContainReact(welcome);
   });

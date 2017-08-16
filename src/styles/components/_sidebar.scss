@@ -1,0 +1,38 @@
+.sidebar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 70px;
+   height: 100%;
+   background-color: $violet1;
+   .logo {
+      margin-bottom: 40px;
+      a {
+         display: block;
+         height: 85px;
+         line-height: 85px;
+         background-color: $red1;
+         text-align: center;
+         img {
+            display: inline-block;
+            width: 40px;
+            margin-top: 25px;
+         }
+      }
+   }
+   i {
+      font-size: 2.6em;
+   }
+   .nav {
+      a:hover {
+         i {
+            color: #fff;
+         }
+      }
+      a.active {
+         i {
+            color: $red1;
+         }
+      }
+   }
+}

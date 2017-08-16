@@ -1,8 +1,15 @@
 nav {
-   background-color: $mainmenu;
-   border-bottom: 1px solid #e7ebf3;
    .nav {
       margin: 0;
+      li {
+         a {
+            color: $gray1;
+            font-size: 1.4em;
+            text-align: center;
+         }
+      }
+   }
+   .nav-horizontal {
       padding: 0 20px;
       text-align: left;
       max-width: 1200px;
@@ -13,19 +20,21 @@ nav {
          display: inline-block;
          a {
             display: block;
-            color: $violet;
-            font-size: 1.4em;
             height: 40px;
             line-height: 40px;
-            text-align: center;
             padding: 0 20px;
          }
-         a:hover {
-            background-color: #EEF1F6;
-         }
-         a.active {
-            background-color: #e7ebf3;
-            color: $violet;
+      }
+   }
+   .nav-vertical {
+      padding: 20px 0;
+      text-align: center;
+      li {
+         display: block;
+         a {
+            display: block;
+            height: 60px;
+            line-height: 60px;
          }
       }
    }
