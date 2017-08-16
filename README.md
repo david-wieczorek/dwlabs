@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/david-wieczorek/dwlabs.svg?branch=master)](https://travis-ci.org/david-wieczorek/dwlabs)<br>
-Upload build directory with ftp protocol when travis test success
+Travis deployment on my FTP and heroku cloud platform when test passed with success.
 
 ## Infos
 
