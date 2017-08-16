@@ -1,10 +1,25 @@
 .main-footer {
    position: fixed;
-   left: 0;
+   left: 70px;
    bottom: 0;
-   width: 100%;
-   background-color: $mainmenu;
-   border-top: 1px solid #e7ebf3;
-   padding: 20px;
+   width: calc(100% - 70px);
+   height: 30px;
+   line-height: 30px;
    font-size: 0.8em;
+   background-color: $blue1;
+   .madeby {
+      margin-right: 20px;
+      span {
+         color: $violet;
+      }
+   }
+   .status {
+      margin-right: 20px;
+      span {
+         color: #fff;
+         b {
+            color: #1aec01;
+         }
+      }
+   }
 }
