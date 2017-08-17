@@ -4,7 +4,7 @@ class Resumeskills extends Component {
   render() {
     return (
       <div>
-        <div className="bloc bloc-darkcolor2 link passion">
+        <div className="bloc bloc-darkcolor link passion">
           <h5>Skills</h5>
           <ul>
             <li>JS/ES6</li>
@@ -21,7 +21,7 @@ class Resumeskills extends Component {
             <li>Travis</li>
           </ul>
         </div>
-        <div className="bloc bloc-darkcolor2 link passion">
+        <div className="bloc bloc-darkcolor link passion">
           <h5>Hobbies</h5>
           <ul>
             <li>Code</li>
