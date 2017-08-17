@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Resumeinfos from '../../components/resumeinfos/resumeinfos';
+import Resumeskills from '../../components/resumeskills/resumeskills';
 
 class Resume extends Component {
   render() {
@@ -11,17 +12,20 @@ class Resume extends Component {
         <div className="content clearfix">
           <div className="left resume-infos">
             <Resumeinfos />
+            <Resumeskills />
           </div>
           <div className="left resume-content">
-            <div className="bloc bloc-darkcolor intro">
+            <div className="bloc bloc-hightcolor intro">
               <p>
                 Lead Front End Developer, autant passioné par la technique
                 (code, technologie, architecture, déploiement) que le design
                 (prototypage et design d’interface, UI-UX, theming).
               </p>
             </div>
-            <div className="bloc bloc-lightcolor">
+            <div className="bloc bloc-nobckcolor">
               <h2>Experiences</h2>
+            </div>
+            <div className="bloc bloc-darkcolor2">
               <div className="xperience">
                 <span className="xperience-date-from">02/2016</span>
                 <span className="xperience-date-to">05/2017</span>
