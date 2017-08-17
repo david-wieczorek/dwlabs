@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Mapbox from '../../components/map/map';
 import Linechart from '../../components/chartline/chartline';
 import Fetchdata from '../../components/mycomp/mycomp';
+import Testfetch from '../../components/testfetch/testfetch';
 
 class Codeview extends Component {
   render() {
@@ -11,6 +12,10 @@ class Codeview extends Component {
           <i className="fa fa-code" aria-hidden="true" /> Code test
         </h1>
         <div className="content">
+          <div className="bloc bloc-lightcolor">
+            <h2>Test fetch from local node server</h2>
+            <Testfetch />
+          </div>
           <div className="bloc bloc-lightcolor">
             <h2>Fetch data Component</h2>
             <Fetchdata />

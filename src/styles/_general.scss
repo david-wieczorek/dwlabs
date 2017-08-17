@@ -30,12 +30,28 @@ body {
   }
 }
 
-.resume-infos {
-  width: 30%;
-  margin-right: 2%;
+.home {
+  .resume-me {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    top: 50%;
+    left: 50%;
+    margin-left: -90px;
+  }
+}
+
+.resume-me {
   text-align: center;
-  img {
-    width: 170px;
+  .welcome-logo {
+    border-radius: 15px;
+    border: 4px solid $violet4;
+    width: 160px;
+    margin-bottom: 6px;
+    -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.75);
   }
   h3 {
     font-size: 3em;
@@ -49,51 +65,68 @@ body {
     color: #fff;
     margin-bottom: 20px;
   }
-  .link {
+  .status {
     color: #fff;
-    h5 {
-      font-size: 1.8em;
+    span {
+      display: inline-block;
+      margin-left: 10px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: $green1;
     }
-    ul {
-      margin: 10px 0 0 0;
-      padding: 0;
-      li {
-        display: inline-block;
-        margin: 4px 7px;
-        font-size: 1.2em;
-        a {
-          display: block;
-          width: 20px;
-          height: 20px;
-          line-height: 20px;
-          color: #fff;
-          i {
-            font-size: 1.5em;
-            color: $violet3;
-          }
+  }
+}
+.link {
+  color: #fff;
+  h5 {
+    font-size: 1.8em;
+  }
+  ul {
+    margin: 10px 0 0 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: 4px 7px;
+      font-size: 1.2em;
+      a {
+        display: block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        color: #fff;
+        i {
+          font-size: 1.5em;
+          color: $violet3;
         }
-        a:hover {
-          i {
-            color: $red1;
-          }
+      }
+      a:hover {
+        i {
+          color: $red1;
         }
       }
     }
   }
-  .passion {
-    margin: 30px 0;
-    h4 {
-      color: $violet3;
-    }
+}
+.passion {
+  margin: 30px 0;
+  h4 {
+    color: $violet3;
   }
 }
+
+.resume-infos {
+  width: 25%;
+  margin-right: 3%;
+  text-align: center;
+}
 .resume-content {
-  width: 68%;
+  width: 72%;
   .intro {
+    margin-bottom: 30px;
     p {
       margin: 0;
       font-style: italic;
-      color: #b5b5b5;
     }
   }
   .xperience {
@@ -101,7 +134,7 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 2px;
-    background-color: $gray2;
+    background-color: #fff;
     //margin-left: 80px;
     .xperience-date-from {
       display: none;
@@ -118,11 +151,12 @@ body {
       top: 15px;
     }
     .xperience-content {
+      color: $violet3;
       h3 {
         font-size: 1.8em;
         margin-bottom: 2px;
         span {
-          color: $blue1;
+          color: $red1;
           font-size: 0.8em;
         }
       }
@@ -137,7 +171,7 @@ body {
         margin: 4px 5px 0 0;
         border-radius: 2px;
         color: #fff;
-        background-color: $gray1;
+        background-color: $blue1;
       }
     }
   }

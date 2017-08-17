@@ -16,13 +16,17 @@
   .bloc-lightcolor {
     background-color: #fff;
   }
+  .bloc-hightcolor {
+    color: #fff;
+    background-color: $red1;
+  }
   .bloc-darkcolor {
     color: #fff;
     background-color: $violet3;
   }
   .bloc-darkcolor2 {
     color: #fff;
-    background-color: #263084;
+    background-color: $violet4;
   }
   .bloc-nobckcolor {
     border-radius: 0;

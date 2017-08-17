@@ -23,11 +23,6 @@ class Mainmenu extends Component {
                 <i className="fa fa-code" aria-hidden="true" />
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/contact" activeClassName="active">
-                <i className="fa fa-envelope" aria-hidden="true" />
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </div>
