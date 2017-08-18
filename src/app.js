@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Sidebar from '../components/sidebar/sidebar';
+import Sidebar from './components/sidebar/sidebar';
 
-class Home extends Component {
+class App extends Component {
   render() {
     return (
       <div className="App">
@@ -14,4 +14,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default App;
