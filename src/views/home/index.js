@@ -39,3 +39,29 @@ alien1.login();
 
 console.log(person1);
 console.log(alien1);
+
+const maPromesse = new Promise((resolve, reject) => {
+  const datas = [1, 2, 3, 4, 5];
+  if (datas.length > 4) {
+    resolve('succès');
+  } else {
+    reject('echec');
+  }
+});
+
+maPromesse
+  .then(data => {
+    console.log(`ce test est un ${data}`);
+  })
+  .catch(e => {
+    console.log(`ce test est un ${e}`);
+  });
+
+function outerFunction() {
+  const outer = `Outer variable!`;
+  return function innerFunction() {
+    console.log(`I see ${outer}`);
+  };
+}
+
+outerFunction()();
