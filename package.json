@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "enzyme": "^2.9.1",
+    "flow-bin": "^0.53.1",
     "husky": "^0.14.3",
     "jest-enzyme": "^3.7.0",
     "lint-staged": "^4.0.3",
@@ -46,6 +47,7 @@
     "analyze": "source-map-explorer build/static/js/main.*",
     "precommit": "lint-staged",
     "start-js": "react-scripts start",
+    "flow": "flow",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
