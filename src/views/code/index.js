@@ -3,6 +3,7 @@ import Mapbox from '../../components/map/map';
 import Linechart from '../../components/chartline/chartline';
 import Fetchdata from '../../components/mycomp/mycomp';
 import Testfetch from '../../components/testfetch/testfetch';
+import Firebasetest from '../../components/firebasetest/firebasetest';
 
 class Codeview extends Component {
   render() {
@@ -11,6 +12,14 @@ class Codeview extends Component {
         <h1 className="page-title">
           <i className="fa fa-code" aria-hidden="true" /> Code test
         </h1>
+        <div className="content">
+          <div className="bloc-wrapper">
+            <div className="bloc bloc-nobckcolor">
+              <h2>Firebase test</h2>
+              <Firebasetest />
+            </div>
+          </div>
+        </div>
         <div className="wrapper-content">
           <div className="content">
             <div className="bloc-wrapper">
